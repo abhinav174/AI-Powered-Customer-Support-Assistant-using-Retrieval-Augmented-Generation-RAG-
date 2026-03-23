@@ -88,16 +88,3 @@ python -m streamlit run app.py
 5. User question is matched against similar chunks
 6. Retrieved context is passed to the chat model
 7. The final answer is generated with source-backed context
-
-## Interview Line
-
-You can describe the project like this:
-
-> I built a RAG pipeline where documents are chunked, converted into embeddings, stored in a vector database, and retrieved based on semantic similarity to generate context-aware answers using an LLM.
-
-## Notes
-
-- If there are no documents in `data/docs/`, the app will ask you to add some.
-- If you update the documents, click the rebuild button in the UI.
-- FAISS index data is stored in `vectorstore/`.
-- The app supports either `NVIDIA_API_KEY` or `OPENAI_API_KEY` from `.env`.
